@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Dashboard() {
+function RoomCard() {
   return (
     <div>
-      Dashboard
+      Roomcard
     </div>
   )
 }
 
-export default Dashboard
+export default RoomCard

@@ -25,9 +25,9 @@ function Header() {
               <li className="hover:bg-gray-100 p-2">
                 {/* <Link to="/profile">View Profile</Link> */}
               </li>
-              <li className="hover:bg-gray-100 p-2">
-                <Link to="/login">Login</Link>
-              </li>
+              <Link to="/login" onClick={() => setDropdownOpen(!dropdownOpen)}>
+                <li className="hover:bg-gray-100 p-2">Login</li>
+              </Link>
             </ul>
           </div>
         )}

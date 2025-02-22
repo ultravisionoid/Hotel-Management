@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <div
@@ -31,6 +31,7 @@ function Sidebar() {
           <Link
             to="/"
             className="flex items-center gap-4 p-2 hover:bg-gray-700 rounded"
+            onClick={() => setOpen(!isOpen)}
           >
             <span className={`${!isOpen && "hidden"}`}>
               <span role="img" aria-label="Home">
@@ -44,6 +45,7 @@ function Sidebar() {
           <Link
             to="/dashboard"
             className="flex items-center gap-4 p-2 hover:bg-gray-700 rounded"
+            onClick={() => setOpen(!isOpen)}
           >
             <span className={`${!isOpen && "hidden"}`}>
               <span role="img" aria-label="Dashboard">
@@ -57,6 +59,7 @@ function Sidebar() {
           <Link
             to="/about"
             className="flex items-center gap-4 p-2 hover:bg-gray-700 rounded"
+            onClick={() => setOpen(!isOpen)}
           >
             <span className={`${!isOpen && "hidden"}`}>
               <span role="img" aria-label="About">
